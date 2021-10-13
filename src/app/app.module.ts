@@ -11,6 +11,10 @@ import { ShortenContentPipe } from './shorten-content.pipe';
 
 import { HttpClientModule } from '@angular/common/http';
 
+import { FormsModule } from '@angular/forms';
+import { CategoryListComponent } from './category-list/category-list.component';
+import { CategoryFormComponent } from './category-form/category-form.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,12 +22,15 @@ import { HttpClientModule } from '@angular/common/http';
     MenuComponent,
     HomeComponent,
     ArticleDetailComponent,
-    ShortenContentPipe
+    ShortenContentPipe,
+    CategoryListComponent,
+    CategoryFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
