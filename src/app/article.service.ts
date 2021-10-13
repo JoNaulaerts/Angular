@@ -5,12 +5,9 @@ import { Article } from './article';
   providedIn: 'root'
 })
 export class ArticleService {
+  private articles: Article[] = [];
 
-  constructor() { }
-
-  getArticles(): Article[] {
-    let articles: Article[] = [];
-
+  constructor() {
     let article1: Article = {
       id: 1,
       title: "Title article",
@@ -23,6 +20,7 @@ export class ArticleService {
       necessitatibus itaque explicabo?`,
       author: "Michaël Cloots",
       publishDate: "28/11/2020"
+
     };
 
     let article2: Article = {
@@ -37,12 +35,20 @@ export class ArticleService {
       necessitatibus itaque explicabo?`,
       author: "Florian Smeyers",
       publishDate: "30/11/2020"
+
     };
 
-    articles.push(article1);
-    articles.push(article2);
+    this.articles.push(article1);
+    this.articles.push(article2);
 
-    return articles;
+  }
+
+  getArticles(): Article[] {
+    return this.articles;
+  }
+
+  getArticleById(id: number) : Article | null {
+    return this.articles.find(a=>a.id === id) ?? null;
   }
 
 }
