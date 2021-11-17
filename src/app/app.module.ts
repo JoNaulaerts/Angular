@@ -20,7 +20,7 @@ import {AdminModule} from './admin/admin.module';
     AppRoutingModule,
     SharedModule,
     ArticleModule,
-    AdminModule
+    // AdminModule
   ],
   providers: [],
   bootstrap: [AppComponent]

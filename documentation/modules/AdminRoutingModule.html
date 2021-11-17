@@ -35,7 +35,7 @@
 
 <ol class="breadcrumb">
     <li>Modules</li>
-    <li >AppRoutingModule</li>
+    <li >AdminRoutingModule</li>
 </ol>
 
 
@@ -55,7 +55,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/app/app-routing.module.ts</code>
+            <code>src/app/admin/admin-routing.module.ts</code>
         </p>
 
 
@@ -72,33 +72,26 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { NgModule } from &#x27;@angular/core&#x27;;
-import { Routes, RouterModule } from &#x27;@angular/router&#x27;;
-import { AppComponent } from &#x27;./app.component&#x27;;
-import { ArticleComponent } from &#x27;./article/article.component&#x27;;
-import { ArticleDetailComponent } from &#x27;./article/article-detail/article-detail.component&#x27;;
-import { HomeComponent } from &#x27;./home/home.component&#x27;;
-import { CategoryFormComponent } from &#x27;./admin/category/category-form/category-form.component&#x27;;
-import { CategoryListComponent } from &#x27;./admin/category/category-list/category-list.component&#x27;;
-import { StatusListComponent } from &#x27;./admin/status/status-list/status-list.component&#x27;;
-import { StatusFormComponent } from &#x27;./admin/status/status-form/status-form.component&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {NgModule} from &#x27;@angular/core&#x27;;
+import {RouterModule, Routes} from &#x27;@angular/router&#x27;;
+import {StatusListComponent} from &#x27;./status/status-list/status-list.component&#x27;;
+import {CategoryListComponent} from &#x27;./category/category-list/category-list.component&#x27;;
+import {StatusFormComponent} from &#x27;./status/status-form/status-form.component&#x27;;
+import {CategoryFormComponent} from &#x27;./category/category-form/category-form.component&#x27;;
 
 const routes: Routes &#x3D; [
-  { path: &#x27;&#x27;, component: HomeComponent },
-  { path: &#x27;article&#x27;, component: ArticleComponent },
-  { path: &#x27;article/:id&#x27;, component: ArticleDetailComponent },
-  { path: &#x27;admin&#x27;,  loadChildren: () &#x3D;&gt; &quot;import(&#x27;./admin/admin.module&#x27;).then(m &#x3D;&gt; m.AdminModule)&quot;},
-  // { path: &#x27;admin/category&#x27;, component: CategoryListComponent },
-  // { path: &#x27;admin/category/form&#x27;, component: CategoryFormComponent },
-  // { path: &#x27;admin/status&#x27;, component: StatusListComponent },
-  // { path: &#x27;admin/status/form&#x27;, component: StatusFormComponent },
+  {path: &#x27;category&#x27;, component: CategoryListComponent},
+  {path: &#x27;category/form&#x27;, component: CategoryFormComponent},
+  {path: &#x27;status&#x27;, component: StatusListComponent},
+  {path: &#x27;status/form&#x27;, component: StatusFormComponent},
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AdminRoutingModule {
+}
 </code></pre>
     </div>
 </div>
@@ -134,7 +127,7 @@ export class AppRoutingModule { }
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'module';
-            var COMPODOC_CURRENT_PAGE_URL = 'AppRoutingModule.html';
+            var COMPODOC_CURRENT_PAGE_URL = 'AdminRoutingModule.html';
             var MAX_SEARCH_RESULTS = 15;
        </script>
 
