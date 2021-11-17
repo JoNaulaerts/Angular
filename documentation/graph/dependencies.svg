@@ -70,31 +70,31 @@
 <title>cluster_CategoryModule_providers</title>
 <polygon fill="none" stroke="black" points="16,-40.8 16,-92.8 182,-92.8 182,-40.8 16,-40.8"/>
 </g>
-<g id="clust44" class="cluster">
+<g id="clust50" class="cluster">
 <title>cluster_SharedModule</title>
 <polygon fill="none" stroke="black" stroke-dasharray="1,5" points="2073,-108.8 2073,-176.8 2389,-176.8 2389,-108.8 2073,-108.8"/>
 </g>
-<g id="clust45" class="cluster">
+<g id="clust51" class="cluster">
 <title>cluster_SharedModule_declarations</title>
 <polygon fill="none" stroke="black" points="2237,-116.8 2237,-168.8 2381,-168.8 2381,-116.8 2237,-116.8"/>
 </g>
-<g id="clust48" class="cluster">
+<g id="clust54" class="cluster">
 <title>cluster_SharedModule_exports</title>
 <polygon fill="none" stroke="black" points="2081,-116.8 2081,-168.8 2229,-168.8 2229,-116.8 2081,-116.8"/>
 </g>
-<g id="clust51" class="cluster">
+<g id="clust57" class="cluster">
 <title>cluster_StatusModule</title>
 <polygon fill="none" stroke="black" stroke-dasharray="1,5" points="923,-32.8 923,-100.8 1741,-100.8 1741,-32.8 923,-32.8"/>
 </g>
-<g id="clust52" class="cluster">
+<g id="clust58" class="cluster">
 <title>cluster_StatusModule_declarations</title>
 <polygon fill="none" stroke="black" points="1415,-40.8 1415,-92.8 1733,-92.8 1733,-40.8 1415,-40.8"/>
 </g>
-<g id="clust56" class="cluster">
+<g id="clust62" class="cluster">
 <title>cluster_StatusModule_exports</title>
 <polygon fill="none" stroke="black" points="1083,-40.8 1083,-92.8 1407,-92.8 1407,-40.8 1083,-40.8"/>
 </g>
-<g id="clust58" class="cluster">
+<g id="clust64" class="cluster">
 <title>cluster_StatusModule_providers</title>
 <polygon fill="none" stroke="black" points="931,-40.8 931,-92.8 1075,-92.8 1075,-40.8 931,-40.8"/>
 </g>

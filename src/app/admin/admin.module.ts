@@ -9,9 +9,9 @@ import {StatusModule} from './status/status.module';
   declarations: [],
   imports: [
     SharedModule,
+    AdminRoutingModule,
     CategoryModule,
-    StatusModule,
-    AdminRoutingModule
+    StatusModule
   ],
   exports: [
     CategoryModule,

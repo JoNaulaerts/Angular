@@ -14,13 +14,13 @@
 <title>cluster_AdminModule</title>
 <polygon fill="none" stroke="black" stroke-dasharray="1,5" points="8,-32.8 8,-230.8 541,-230.8 541,-32.8 8,-32.8"/>
 </g>
-<g id="clust4" class="cluster">
-<title>cluster_AdminModule_exports</title>
-<polygon fill="none" stroke="black" points="127,-170.8 127,-222.8 373,-222.8 373,-170.8 127,-170.8"/>
-</g>
 <g id="clust3" class="cluster">
 <title>cluster_AdminModule_imports</title>
 <polygon fill="none" stroke="black" points="16,-40.8 16,-92.8 533,-92.8 533,-40.8 16,-40.8"/>
+</g>
+<g id="clust4" class="cluster">
+<title>cluster_AdminModule_exports</title>
+<polygon fill="none" stroke="black" points="127,-170.8 127,-222.8 373,-222.8 373,-170.8 127,-170.8"/>
 </g>
 <!-- AdminRoutingModule -->
 <g id="node1" class="node">
