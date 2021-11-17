@@ -8,6 +8,7 @@ import { CategoryFormComponent } from './admin/category/category-form/category-f
 import { CategoryListComponent } from './admin/category/category-list/category-list.component';
 import { StatusListComponent } from './admin/status/status-list/status-list.component';
 import { StatusFormComponent } from './admin/status/status-form/status-form.component';
+import { SecurityComponent } from './security/security/security.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -18,6 +19,9 @@ const routes: Routes = [
   // { path: 'admin/category/form', component: CategoryFormComponent },
   // { path: 'admin/status', component: StatusListComponent },
   // { path: 'admin/status/form', component: StatusFormComponent },
+  { path: 'login', component: SecurityComponent},
+  { path: 'register', component: SecurityComponent},
+  { path: 'logout', component: SecurityComponent}
 ];
 
 @NgModule({
