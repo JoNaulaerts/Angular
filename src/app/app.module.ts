@@ -8,6 +8,7 @@ import {HomeComponent} from './home/home.component';
 import {SharedModule} from './shared/shared.module';
 import {ArticleModule} from './article/article.module';
 import {AdminModule} from './admin/admin.module';
+import { SecurityModule } from './security/security.module';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import {AdminModule} from './admin/admin.module';
     SharedModule,
     ArticleModule,
     // AdminModule
+    SecurityModule
   ],
   providers: [],
   bootstrap: [AppComponent]
